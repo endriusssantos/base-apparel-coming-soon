@@ -1,0 +1,118 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 98%);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container .background-image {
+    display: flex;
+    justify-content: right;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content .logo-container {
+    width: 65%;
+}
+
+.container .content .title {
+    color: hsl(0, 36%, 70%);
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 15px;
+    line-height: 70px;
+    padding: 180px 0 25px;
+    max-width: 65%;
+}
+
+.container .content .title strong {
+    color: hsl(0, 6%, 24%);
+}
+
+.container .content .description {
+    color: hsl(0, 36%, 70%);
+    max-width: 65%;
+    line-height: 25px;
+    padding-bottom: 40px;
+}
+
+.container .content .address {
+    width: 65%;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.container .content .address .email {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    border: 1px hsl(0, 36%, 70%) solid;
+    border-radius: 30px;
+    padding: 10px 30px;
+    background-color: transparent;
+}
+
+.container .content .address .email::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+.container .content .address .email:focus {
+    outline: 2px hsl(0, 36%, 70%) solid;
+}
+
+.container .content .button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container .content .button .btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    width: 85px;
+    height: 50px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.container .content .button .btn:hover {
+    background: hsl(0, 80%, 86%);
+    box-shadow: 0px 8px 19px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container .content .address .email.error {
+    border: 2px hsl(0, 93%, 68%) solid;
+}
+
+.container .content .address .error-image {
+    position: absolute;
+    top: 13px;
+    right: 100px;
+    display: none;
+}
+
+.container .content .address .error-mensage {
+    color: hsl(0, 93%, 68%);
+    font-size: 14px;
+    padding: 10px 30px;
+    display: none;
+}
