@@ -1,7 +1,7 @@
-emailInput = document.getElementById('input');
-emailBtn = document.getElementById('btn');
-errorText = document.getElementById('error-msg');
-errorImg = document.getElementById('error-img');
+const emailInput = document.getElementById('input');
+const emailBtn = document.getElementById('btn');
+const errorText = document.getElementById('error-msg');
+const errorImg = document.getElementById('error-img');
 
 emailBtn.addEventListener('click', () => {
     const inputValue = emailInput.value.trim();
